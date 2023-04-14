@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.image{
+    position: relative;
+    width: 53px;
+}
+
+.navbar{
+    display: flex;
+    width: 100vw;
+    background-color: #efefef;
+    align-items: center;
+}
+
+.navbar a{
+    color: #5c5c5c;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.addButton{
+    margin: 24px 0px 0px 24px;
+    padding: 8px 15px;
+    border: none;
+    font-size: 20px;
+    background-color: #f3ca02;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.disclaimer{
+    margin-left: 12px;
+    color: #5c5c5c;
+    font-style: italic;
+}
+
+
+#notesDiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.note{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 500px;
+    margin: 25px;
+}
+
+.title{
+    font-size: 25px;
+    display: block;
+    padding: 8px;
+    border: none;
+    margin: 12px;
+    outline: none;
+}
+
+.text{
+    display: block;
+    padding: 8px;
+    border: none;
+    margin: 12px;
+    font-size: 21px;
+    outline: none;
+}
+
+.submit{
+    margin: 12px;
+    padding: 12px;
+    background-color: #f3ca02;
+    border: none;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.delete{
+    margin: 12px;
+    padding: 12px;
+    background-color: #ed1a1a;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1170px) {
+    #notesDiv{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .note{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 500px;
+        height: 250px;
+        margin: 25px;
+    }
+
+    .submit{
+        margin-top: 0;
+    }
+    .delete{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .note{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 300px;
+        height: 150px;
+        margin: 25px;
+    }
+
+    .submit{
+        margin-top: 0;
+        font-size: 12px;
+        position: relative;
+        top: -20px;
+    }
+    .delete{
+        margin-top: 0;
+        font-size: 10px;
+        position: relative;
+        top: -20px;
+    }
+
+    .title{
+        font-size: 16px;
+        margin: 6px;
+        margin-bottom: 0;
+        width: 290px;
+    }
+    .text{
+        font-size: 13px;
+        margin: 6px;
+        margin-top: 0;
+        width: 290px;
+    }
+}
