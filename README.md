@@ -1,6 +1,9 @@
 # Keeper 📝
 
-This is a web based project which helps you keep track of your tasks by adding their notes.
+Link to the Project: [Keeper](https://hariom01010.github.io/keeper/)
+
+This is a web based project which helps you keep track of your tasks by adding their notes
+
 
 In this project, following two functionalities have been provided:
 - Add a note
